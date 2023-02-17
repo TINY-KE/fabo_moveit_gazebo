@@ -22,18 +22,19 @@
     <!-- PROPERTY LIST -->
     <!--All units in m-kg-s-radians unit system -->
     <xacro:property name="M_PI" value="3.1415926535897931" />
-
+    <xacro:property name="shell_high_correct" value="0.04" />
+    <xacro:property name="caster_high_correct" value="-0.0001" />
     <!-- Main body length, width, height and mass -->
     <xacro:property name="base_mass"        value="0.5" /> 
-    <xacro:property name="base_link_radius" value="0.13"/>
+    <xacro:property name="base_link_radius" value="0.2"/>   <!-- 原： 0.13 -->
     <xacro:property name="base_link_length" value="0.005"/>
 
-    <xacro:property name="motor_x" value="-0.05"/>
+    <xacro:property name="motor_x" value="0"/>
 
     <!-- Caster radius and mass -->
     <xacro:property name="caster_radius"          value="0.016" /> 
     <xacro:property name="caster_mass"            value="0.01" /> 
-    <xacro:property name="caster_joint_origin_x"  value="-0.12" />
+    <xacro:property name="caster_joint_origin_x"  value="-0.25" />
 
     <!-- Wheel radius, height and mass -->
     <xacro:property name="wheel_radius" value="0.033" /> 
@@ -147,7 +148,7 @@
         <joint name="base_to_${fb}_caster_joint" type="fixed">
             <parent link="base_link"/>
             <child link="${fb}_caster_link"/>
-            <origin xyz="${translateX*caster_joint_origin_x} 0 ${-caster_radius}" rpy="0 0 0"/>
+            <origin xyz="${translateX*caster_joint_origin_x} 0 ${-caster_radius + caster_high_correct}" rpy="0 0 0"/>
         </joint>
     </xacro:macro>
 
@@ -224,8 +225,7 @@
             <visual>
                 <origin xyz="0 0 0" rpy="0 0 0" />
                 <geometry>
-                    <!-- <box size="0.001 0.001 0.001" /> -->
-                    <mesh filename="package://my_gazebo/urdf/fabo.STL"/>
+                    <box size="0.001 0.001 0.001" />
                 </geometry>
             </visual>
         </link>
@@ -246,21 +246,72 @@
                     <cylinder length="${base_link_length}" radius="${base_link_radius}"/>
                 </geometry>
                 <material name="yellow" />
-            </visual>Transm
+            </visual>
+            <collision>
                 <origin xyz="0 0 0" rpy="0 0 0" />
                 <geometry>
                     <cylinder length="${base_link_length}" radius="${base_link_radius}"/>
                 </geometry>
-		<contact>
-      		    <ode>
-        		<min_depth>0.001</min_depth>
-                    </ode>
-    		</contact>
             </collision>   
         </link>
+
+
         <gazebo reference="base_link">
             <material>Gazebo/Blue</material>
         </gazebo>
+        
+
+        <!-- shell -->
+        <joint name="shell_footprint_joint" type="fixed">
+            <origin xyz="0 0 ${shell_high_correct}" rpy="0 0 ${M_PI}" />
+            <parent link="base_footprint"/>
+            <child link="shell_link" />
+        </joint>
+
+        <link
+            name="shell_link">
+            <inertial>
+            <origin
+                xyz="-0.00294082483465983 0.000146714888625652 0.442160868151096"
+                rpy="0 0 0" />
+            <mass
+                value="0.0000000000000001" />
+            <inertia
+                ixx="0.172898160476508"
+                ixy="2.31745522812561E-06"
+                ixz="-0.00159810687296311"
+                iyy="0.148915768801367"
+                iyz="-4.49683641611027E-05"
+                izz="0.146063097245756" />
+            </inertial>
+            <visual>
+            <origin
+                xyz="0 0 0"
+                rpy="0 0 0" />
+            <geometry>
+                <mesh
+                filename="package://fabo_shell/meshes/shell_link.STL" />
+            </geometry>
+            <material
+                name="">
+                <color
+                rgba="1 1 1 1" />
+            </material>
+            </visual>
+            <collision>
+            <origin
+                xyz="0 0 0"
+                rpy="0 0 0" />
+            <geometry>
+                <mesh
+                filename="package://fabo_shell/meshes/shell_link.STL" />
+            </geometry>
+            </collision>
+        </link>
+        <gazebo reference="shell_link">
+            <material>Gazebo/Grey</material>
+        </gazebo>
+
 
         <!-- Wheel Definitions -->
         <wheel lr="right"  translateY="-1" />
@@ -268,6 +319,7 @@
 
         <!-- Casters Definitions -->
         <caster fb="front"  translateX="-1" />
+        <caster fb="back"  translateX="1" />
 
         <!-- plates and standoff Definitions -->
         <mrobot_standoff_2in parent="base_link" number="1" x_loc="-${standoff_x/2 + 0.03}" y_loc="-${standoff_y - 0.03}" z_loc="${plate_height/2}"/>
