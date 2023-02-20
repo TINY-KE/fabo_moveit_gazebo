@@ -14,7 +14,7 @@
 	<xacro:include filename="$(find my_gazebo)/urdf/kinectv1_neck.urdf.xacro" />
 	<xacro:property name="camera_offset_x" value="0.0" />
 	<xacro:property name="camera_offset_y" value="0.0" />
-	<xacro:property name="camera_offset_z" value="0.9" />
-	<xacro:kinectv1_neck parent="plate_2_link" camera_offset_x="${camera_offset_x}" camera_offset_y="${camera_offset_y}" camera_offset_z="${camera_offset_z}" />
+	<xacro:property name="camera_offset_z" value="1.2" />
+	<xacro:kinectv1_neck parent="base_footprint" camera_offset_x="${camera_offset_x}" camera_offset_y="${camera_offset_y}" camera_offset_z="${camera_offset_z}" />
 
 </robot>

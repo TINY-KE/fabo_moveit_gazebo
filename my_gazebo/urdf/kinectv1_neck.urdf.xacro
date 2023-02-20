@@ -49,6 +49,9 @@
     </gazebo>
   </xacro:macro>
 
+  <!-- kinect 旧版本 -->
+  <xacro:include filename="$(find my_gazebo)/urdf/kinect.urdf.xacro"/>
+  <!-- kinectv1 huxianxu版本 -->
   <xacro:macro name="kinectv1" params="parent">
       <joint name="camera_rgb_joint" type="fixed">
           <origin xyz="0 ${kinect_cam_py} 0.0" rpy="0 0 0"/>
@@ -119,7 +122,7 @@
   </xacro:macro>
 
 
-  
+  <!-- 添加脖子 -->
   <xacro:macro name="kinectv1_neck" params="parent camera_offset_x camera_offset_y camera_offset_z">
         <joint name="joint_neck_1" type="revolute"> 
           <origin xyz="${camera_offset_x} ${camera_offset_y} ${camera_offset_z}" rpy="0 0 0"/>
@@ -151,7 +154,7 @@
         </link>
 
         <joint name="joint_neck_2" type="fixed">
-          <origin xyz="0.0 0.0 0.1" rpy="0 0.4887 0"/> 
+          <origin xyz="0.0 0.0 0.0" rpy="0 0.4887 0"/>   <!-- 28 angle 0.4887hudu -->
           <parent link="platform_1"/>
           <child link="platform_2"/>
         </joint>
@@ -178,7 +181,8 @@
         </link>
 
         <!-- rplidar sensor for simulation -->
-        <xacro:kinectv1 parent="platform_2" />
+        <!-- <xacro:kinectv1 parent="platform_2" /> -->
+        <xacro:sensor_kinect parent="platform_2"/>
 
         <transmission name="transmission_neck">
           <type>transmission_interface/SimpleTransmission</type>

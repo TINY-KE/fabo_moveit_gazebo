@@ -7,12 +7,12 @@
 <launch>
 
 <!-- By default, we won't load or override the robot_description in movegroup-->
-  <arg name="load_robot_description" default="false"/>
+    <arg name="load_robot_description" default="false"/>
 
   
 <!-- (1)启动gazebo仿真环境: launch the gazebo simulator and spawn the robot -->
     <!-- 设置Gazebo specific options  -->
-    <arg name="world_name" value="$(find gazebo_object_env)/world/nine_highdesk_wall.world"/>  
+    <arg name="world_name" value="$(find my_gazebo)/world/nine_highdesk.world"/>  
     <!-- $(find gazebo_object_env)/world/nine_desk_wall.world    $(find mrobot_gazebo)/worlds/cloister.world-->
     <arg name="paused" default="false"/>
     <arg name="use_sim_time" default="true"/>
@@ -34,7 +34,7 @@
     <!-- <param name="robot_description" textfile="$(arg urdf_path)" /> -->
     <!-- 在gazebo中加载机器人模型-->
     <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-          args="-urdf -model mrobot -param robot_description"/> 
+          args="-urdf -model mrobot -param robot_description     -R 0.0 -P 0.0 -Y 3.1415926 "/> 
 
 
 
