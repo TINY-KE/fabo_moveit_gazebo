@@ -88,4 +88,8 @@
     <!-- <include file="$(find robot_hokuyo_kinectv1neck)/launch/default_warehouse_db.launch" if="$(arg db)">
         <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
     </include> -->
+
+    <!-- <include file="$(find fabo_robot_gazebo)/launch/fake_navigation.launch" >
+    </include> -->
+
 </launch>

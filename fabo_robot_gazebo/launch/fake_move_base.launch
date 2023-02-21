@@ -5,7 +5,8 @@
     <rosparam file="$(find fabo_robot_gazebo)/config/mrobot/costmap_common_params.yaml" command="load" ns="local_costmap" />
     <rosparam file="$(find fabo_robot_gazebo)/config/mrobot/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find fabo_robot_gazebo)/config/mrobot/global_costmap_params.yaml" command="load" />
-    <rosparam file="$(find fabo_robot_gazebo)/config/mrobot/base_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find fabo_robot_gazebo)/config/mrobot/base_local_planner_params2.yaml" command="load" />
+    <rosparam file="$(find fabo_robot_gazebo)/config/mrobot/base_global_planner_params.yaml" command="load" />
   </node>
   
 </launch>
