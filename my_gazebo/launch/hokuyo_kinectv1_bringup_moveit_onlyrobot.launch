@@ -12,7 +12,7 @@
   
 <!-- (1)启动gazebo仿真环境: launch the gazebo simulator and spawn the robot -->
     <!-- 设置Gazebo specific options  -->
-    <arg name="world_name" value="$(find my_gazebo)/world/nine_highdesk_3.world"/>  
+    <arg name="world_name" value="$(find my_gazebo)/world/nine_highdesk_1.world"/>  
     <!-- $(find gazebo_object_env)/world/nine_desk_wall.world    $(find mrobot_gazebo)/worlds/cloister.world-->
     <arg name="paused" default="false"/>
     <arg name="use_sim_time" default="true"/>
@@ -22,7 +22,7 @@
     <arg name="urdf_path" default="$(find my_gazebo)/urdf/robot_hokuyo_kinectv1neck.urdf.xacro"/>
     <!-- 运行gazebo仿真环境 -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <arg name="world_name" value="$(arg world_name)" />
+        <!-- <arg name="world_name" value="$(arg world_name)" /> -->
         <arg name="debug" value="$(arg debug)" />
         <arg name="gui" value="$(arg gui)" />
         <arg name="paused" value="$(arg paused)"/>
