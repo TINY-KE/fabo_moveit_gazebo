@@ -523,47 +523,47 @@
       <pose frame=''>0.739616 -0.854115 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>5275 655000000</sim_time>
-      <real_time>53 621177833</real_time>
-      <wall_time>1676795938 627729855</wall_time>
-      <iterations>52778</iterations>
+      <sim_time>6066 174000000</sim_time>
+      <real_time>236 204329629</real_time>
+      <wall_time>1683310861 93680086</wall_time>
+      <iterations>235323</iterations>
       <model name='beer'>
-        <pose frame=''>-2.56831 0.387119 0.610694 -3e-06 -1e-06 0.015537</pose>
+        <pose frame=''>-2.5697 0.387437 0.610693 2e-05 6e-06 0.015395</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-2.56831 0.38712 0.725694 -3e-06 -1e-06 0.015537</pose>
+          <pose frame=''>-2.5697 0.387435 0.725693 2e-05 6e-06 0.015395</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.973744 -2.55317 1.63013 0.285841 1.28327 2.48365</acceleration>
-          <wrench>0.37976 -0.995737 0.635752 0 -0 0</wrench>
+          <acceleration>0.900729 -2.83419 -1.37144 2.61802 1.51818 2.92468</acceleration>
+          <wrench>0.351284 -1.10534 -0.534863 0 -0 0</wrench>
         </link>
       </model>
       <model name='book_16'>
-        <pose frame=''>-1.97944 0.140244 0.612635 -0.018982 0.003466 0.180604</pose>
+        <pose frame=''>-1.97944 0.140244 0.612635 -0.019293 -0.000342 -0.017709</pose>
         <scale>1 1 1</scale>
         <link name='cover'>
-          <pose frame=''>-1.97942 0.140435 0.628039 -0.018982 0.003466 0.180604</pose>
+          <pose frame=''>-1.97944 0.140433 0.628039 -0.019293 -0.000342 -0.017709</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='page'>
-          <pose frame=''>-1.97955 0.141139 0.628026 -0.018982 0.003466 0.180604</pose>
+          <pose frame=''>-1.97943 0.141149 0.628026 -0.019293 -0.000342 -0.017709</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='book_2'>
-        <pose frame=''>-1.97657 0.410735 0.643929 -3.13995 -0.014217 1.40083</pose>
+        <pose frame=''>-1.97635 0.411182 0.610309 -0.004085 -0.014217 1.40083</pose>
         <scale>1 1 1</scale>
         <link name='cover'>
-          <pose frame=''>-1.97666 0.410973 0.628526 -3.13995 -0.014217 1.40083</pose>
+          <pose frame=''>-1.97634 0.410959 0.625713 -0.004085 -0.014217 1.40083</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='page'>
-          <pose frame=''>-1.97595 0.41085 0.628524 -3.13995 -0.014217 1.40083</pose>
+          <pose frame=''>-1.97705 0.41108 0.625711 -0.004085 -0.014217 1.40083</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -585,39 +585,33 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='cup_green'>
-        <pose frame=''>-1.4341 -0.571847 0.610196 0 -0 0</pose>
+      <model name='cup_blue'>
+        <pose frame=''>-1.34314 -0.416688 0.611517 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='link_7'>
-          <pose frame=''>-1.4341 -0.571847 0.610196 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='link_8'>
-          <pose frame=''>-1.4341 -0.571847 0.610196 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='link_9'>
-          <pose frame=''>-1.4341 -0.571847 0.610196 0 -0 0</pose>
+        <link name='link_13'>
+          <pose frame=''>-1.34314 -0.416688 0.611517 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='cup_yellow'>
-        <pose frame=''>-1.33493 -0.434791 0.609657 0 -0 0</pose>
+      <model name='cup_green'>
+        <pose frame=''>-1.43277 -0.572174 0.610196 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='link_12'>
-          <pose frame=''>-1.33518 -0.434941 0.609678 0 -0 0</pose>
+        <link name='link_7'>
+          <pose frame=''>-1.43277 -0.572174 0.610196 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
-        <link name='link_13'>
-          <pose frame=''>-1.37993 -0.434941 0.589657 0 -0 0</pose>
+        <link name='link_8'>
+          <pose frame=''>-1.43277 -0.572174 0.610196 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='link_9'>
+          <pose frame=''>-1.43277 -0.572174 0.610196 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -670,46 +664,46 @@
         </link>
       </model>
       <model name='laptop_pc_1'>
-        <pose frame=''>-2.45509 -0.516297 0.607399 0 0 -0.177514</pose>
+        <pose frame=''>-2.45542 -0.517621 0.607399 0 0 -0.177514</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose frame=''>-2.45509 -0.516297 0.607399 0 0 -0.177514</pose>
+          <pose frame=''>-2.45542 -0.517621 0.607399 0 0 -0.177514</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='link_1'>
-          <pose frame=''>-2.45509 -0.516297 0.607399 0 0 -0.177514</pose>
+          <pose frame=''>-2.45542 -0.517621 0.607399 0 0 -0.177514</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='link_2'>
-          <pose frame=''>-2.45509 -0.516297 0.607399 0 0 -0.177514</pose>
+          <pose frame=''>-2.45542 -0.517621 0.607399 0 0 -0.177514</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='link_3'>
-          <pose frame=''>-2.45509 -0.516297 0.607399 0 0 -0.177514</pose>
+          <pose frame=''>-2.45542 -0.517621 0.607399 0 0 -0.177514</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='link_4'>
-          <pose frame=''>-2.45509 -0.516297 0.607399 0 0 -0.177514</pose>
+          <pose frame=''>-2.45542 -0.517621 0.607399 0 0 -0.177514</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='link_5'>
-          <pose frame=''>-2.45509 -0.516297 0.607399 0 0 -0.177514</pose>
+          <pose frame=''>-2.45542 -0.517621 0.607399 0 0 -0.177514</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='link_6'>
-          <pose frame=''>-2.45509 -0.516297 0.607399 0 0 -0.177514</pose>
+          <pose frame=''>-2.45542 -0.517621 0.607399 0 0 -0.177514</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -731,7 +725,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>0.192653 -2.66732 9.12192 -0 1.1618 2.5448</pose>
+        <pose frame=''>-1.04433 -2.13328 2.09624 0 0.685796 2.10877</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -937,109 +931,6 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
       <pose frame=''>0.086042 -0.355137 0 0 -0 0</pose>
-    </model>
-    <model name='cup_yellow'>
-      <link name='link_12'>
-        <pose frame=''>-0.00025 -0.00015 2.1e-05 0 -0 0</pose>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://cup_yellow/meshes/cup_2.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <ambient>0.933 0.749 0.0392 1</ambient>
-            <diffuse>0.933 0.749 0.0392 1</diffuse>
-            <specular>0.01 0.01 0.01 1</specular>
-            <emissive>0 0 0 1</emissive>
-            <shader type='vertex'>
-              <normal_map>__default__</normal_map>
-            </shader>
-          </material>
-          <cast_shadows>1</cast_shadows>
-          <transparency>0</transparency>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cup_yellow/meshes/cup.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='link_13'>
-        <pose frame=''>-0.045 -0.00015 -0.02 0 -0 0</pose>
-        <gravity>1</gravity>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <visual name='visual'>
-          <pose frame=''>0 0 0 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://cup_yellow/meshes/drink.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <lighting>1</lighting>
-            <ambient>0.3803 0.196 0.0156 1</ambient>
-            <diffuse>0.3803 0.196 0.0156 1</diffuse>
-            <specular>0.01 0.01 0.01 1</specular>
-            <emissive>0 0 0 1</emissive>
-            <shader type='vertex'>
-              <normal_map>__default__</normal_map>
-            </shader>
-          </material>
-          <cast_shadows>1</cast_shadows>
-          <transparency>0</transparency>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
-          <geometry>
-            <mesh>
-              <uri>model://cup_yellow/meshes/drink.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <enable_wind>0</enable_wind>
-      </link>
-      <static>1</static>
-      <allow_auto_disable>1</allow_auto_disable>
-      <pose frame=''>0.717506 -0.434791 0 0 -0 0</pose>
     </model>
     <model name='beer'>
       <link name='link'>
@@ -1518,6 +1409,59 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
       <pose frame=''>0.080926 -1.04055 -0.687799 0 -0 0</pose>
+    </model>
+    <model name='cup_blue'>
+      <link name='link_13'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://cup_blue/meshes/cup1.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <ambient>0.305 0.439 0.882 1</ambient>
+            <diffuse>0.305 0.439 0.882 1</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+          </material>
+          <cast_shadows>1</cast_shadows>
+          <transparency>0</transparency>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://cup_blue/meshes/cup1.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose frame=''>-1.63395 -1.02671 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>
