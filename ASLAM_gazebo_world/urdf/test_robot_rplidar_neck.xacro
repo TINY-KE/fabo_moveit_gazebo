@@ -2,9 +2,9 @@
 <robot name="mrobot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 <!-- robot_mrobot/mrobot_gazebo/urdf/dianzikeji -->
    
-    <xacro:include filename="$(find my_gazebo)/urdf/test_robot.urdf.xacro" />
+    <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/test_robot.urdf.xacro" />
 
-    <xacro:include filename="$(find my_gazebo)/urdf/test_arm.xacro" />
+    <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/test_arm.xacro" />
     
 
     <xacro:property name="offset_x" value="0.03" />
@@ -19,7 +19,7 @@
     </joint>
 
     <!-- 雷达 -->
-    <xacro:include filename="$(find my_gazebo)/urdf/test_rplidar.xacro" />
+    <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/test_rplidar.xacro" />
 
 	<xacro:property name="rplidar_offset_x" value="0" />
 	<xacro:property name="rplidar_offset_y" value="0" />

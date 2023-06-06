@@ -50,7 +50,7 @@
   </xacro:macro>
 
   <!-- kinect 旧版本 -->
-  <xacro:include filename="$(find my_gazebo)/urdf/kinect.urdf.xacro"/>
+  <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/kinect.urdf.xacro"/>
   <!-- kinectv1 huxianxu版本 -->
   <xacro:macro name="kinectv1" params="parent">
       <joint name="camera_rgb_joint" type="fixed">
@@ -82,7 +82,7 @@
         <visual>
           <origin xyz="0 0 0" rpy="0 0 ${M_PI/2}"/>
           <geometry>
-            <mesh filename="package://my_gazebo/urdf/kinect.dae"/>
+            <mesh filename="package://ASLAM_gazebo_world/urdf/kinect.dae"/>
           </geometry>
         </visual>
         <collision>

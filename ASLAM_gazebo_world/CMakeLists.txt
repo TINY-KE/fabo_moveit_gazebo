@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(my_gazebo)
+project(ASLAM_gazebo_world)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -19,9 +19,9 @@ find_package(catkin REQUIRED COMPONENTS
   gazebo_ros
 )
 
-set(Boost_INCLUDE_DIR /usr/include)
-set(Boost_LIBRARY_DIR /usr/lib/x86_64-linux-gnu/)
-find_package(Boost REQUIRED COMPONENTS system iostreams)
+set(Boost_INCLUDE_DIR /usr/include/boost)
+set(Boost_LIBRARY_DIR /usr/lib/x86_64-linux-gnu)
+find_package(Boost REQUIRED COMPONENTS filesystem thread date_time iostreams serialization chrono system)
 find_package(gazebo REQUIRED)
 
 # find_package(gazebo REQUIRED)
@@ -51,4 +51,8 @@ add_definitions(${GAZEBO_CXX_FLAGS})
 
 
 add_executable(gazebo_world_parser src/gazebo_world_parser.cpp)
-target_link_libraries(gazebo_world_parser  ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+target_link_libraries(gazebo_world_parser 
+  ${catkin_LIBRARIES} 
+  ${GAZEBO_LIBRARIES} 
+#  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.65.1
+  )

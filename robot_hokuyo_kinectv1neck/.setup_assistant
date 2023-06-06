@@ -1,6 +1,6 @@
 moveit_setup_assistant_config:
   URDF:
-    package: my_gazebo
+    package: ASLAM_gazebo_world
     relative_path: urdf/robot_hokuyo_kinectv1neck.urdf.xacro
     xacro_args: ""
   SRDF:

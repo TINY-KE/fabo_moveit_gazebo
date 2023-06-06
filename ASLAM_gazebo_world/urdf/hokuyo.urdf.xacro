@@ -1,7 +1,7 @@
 <?xml version="1.0"?>  
     <robot name="laser_hokuyo" xmlns:xacro="http://ros.org/wiki/xacro">  
-      <!-- <xacro:include filename="$(find my_gazebo)/urdf/turtlebot_thirdparty/turtlebot_gazebo.urdf.xacro"/>   -->
-      <!-- <xacro:include filename="$(find my_gazebo)/urdf/turtlebot_thirdparty/turtlebot_properties.urdf.xacro"/>   -->
+      <!-- <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/turtlebot_thirdparty/turtlebot_gazebo.urdf.xacro"/>   -->
+      <!-- <xacro:include filename="$(find ASLAM_gazebo_world)/urdf/turtlebot_thirdparty/turtlebot_properties.urdf.xacro"/>   -->
       
       <!-- Set up laser gazebo details -->  
       <xacro:macro name="sim_hokuyo_range_finder">

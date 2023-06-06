@@ -290,7 +290,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <mesh
-                filename="package://my_gazebo/urdf/shell_link.STL" />
+                filename="package://ASLAM_gazebo_world/urdf/shell_link.STL" />
             </geometry>
             <material
                 name="">
@@ -304,7 +304,7 @@
                 rpy="0 0 0" />
             <geometry>
                 <cylinder length="${base_link_length}" radius="${base_link_radius}"/>
-                <!-- <mesh   filename="package://my_gazebo/urdf/shell_link.STL" /> -->
+                <!-- <mesh   filename="package://ASLAM_gazebo_world/urdf/shell_link.STL" /> -->
             </geometry>
             </collision>
         </link>

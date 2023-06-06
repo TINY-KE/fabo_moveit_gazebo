@@ -1,4 +1,4 @@
-image: /home/zhjd/workspace/ws_huchunxu/src/ros_exploring/my_mobilearm/my_gazebo/map/map.pgm
+image: /home/zhjd/workspace/ws_huchunxu/src/ros_exploring/my_mobilearm/ASLAM_gazebo_world/map/map.pgm
 resolution: 0.050000
 origin: [-15.400000, -12.200000, 0.000000]
 negate: 0

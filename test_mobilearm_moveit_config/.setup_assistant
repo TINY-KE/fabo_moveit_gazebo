@@ -1,6 +1,6 @@
 moveit_setup_assistant_config:
   URDF:
-    package: my_gazebo
+    package: ASLAM_gazebo_world
     relative_path: urdf/test_robot_with_arm.urdf.xacro
     xacro_args: ""
   SRDF:

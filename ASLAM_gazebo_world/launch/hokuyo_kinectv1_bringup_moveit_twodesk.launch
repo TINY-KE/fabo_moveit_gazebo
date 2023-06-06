@@ -12,15 +12,15 @@
   
 <!-- (1)启动gazebo仿真环境: launch the gazebo simulator and spawn the robot -->
     <!-- 设置Gazebo specific options  -->
-    <!-- <arg name="world_name" value="$(find my_gazebo)/world/nine_highdesk.world"/>  -->
-    <arg name="world_name" value="$(find my_gazebo)/world/twodesk_wall.world"/>  
+    <!-- <arg name="world_name" value="$(find ASLAM_gazebo_world)/world/nine_highdesk.world"/>  -->
+    <arg name="world_name" value="$(find ASLAM_gazebo_world)/world/twodesk_wall.world"/>  
     <!-- $(find gazebo_object_env)/world/nine_desk_wall.world    $(find mrobot_gazebo)/worlds/cloister.world-->
     <arg name="paused" default="false"/>
     <arg name="use_sim_time" default="true"/>
     <arg name="gui" default="true"/>
     <arg name="headless" default="false"/>
     <arg name="debug" default="false"/>
-    <arg name="urdf_path" default="$(find my_gazebo)/urdf/robot_hokuyo_kinectv1neck.urdf.xacro"/>
+    <arg name="urdf_path" default="$(find ASLAM_gazebo_world)/urdf/robot_hokuyo_kinectv1neck.urdf.xacro"/>
     <!-- 运行gazebo仿真环境 -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="world_name" value="$(arg world_name)" />
@@ -31,7 +31,7 @@
         <arg name="headless" value="$(arg headless)"/>
     </include>
     <!-- 加载机器人模型描述参数 -->
-    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find my_gazebo)/urdf/robot_hokuyo_kinectv1neck.urdf.xacro'" /> 
+    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find ASLAM_gazebo_world)/urdf/robot_hokuyo_kinectv1neck.urdf.xacro'" /> 
     <!-- <param name="robot_description" textfile="$(arg urdf_path)" /> -->
     <!--  在gazebo中加载机器人模型  TODO:;-->
     <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
@@ -90,7 +90,7 @@
         <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
     </include> -->
 
-    <!-- <include file="$(find fabo_robot_gazebo)/launch/fake_navigation.launch" >
+    <!-- <include file="$(find fabo_gazebo_navigation)/launch/fake_navigation.launch" >
     </include> -->
 
 </launch>

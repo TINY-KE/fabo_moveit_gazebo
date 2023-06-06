@@ -2346,7 +2346,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/zhjd/workspace/ws_huchunxu/src/ros_exploring/my_mobilearm/my_gazebo/urdf/shell_link.STL</uri>
+              <uri>/home/zhjd/workspace/ws_huchunxu/src/ros_exploring/my_mobilearm/ASLAM_gazebo_world/urdf/shell_link.STL</uri>
             </mesh>
           </geometry>
           <material>
@@ -2651,7 +2651,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/zhjd/workspace/ws_huchunxu/src/ros_exploring/my_mobilearm/my_gazebo/urdf/kinect.dae</uri>
+              <uri>/home/zhjd/workspace/ws_huchunxu/src/ros_exploring/my_mobilearm/ASLAM_gazebo_world/urdf/kinect.dae</uri>
             </mesh>
           </geometry>
           <material>

@@ -3,8 +3,8 @@
 *.ldb
 *.sln
 *.config
-my_gazebo/urdf/fabo.STEP
-my_gazebo/urdf/fabo.STL
+ASLAM_gazebo_world/urdf/fabo.STEP
+ASLAM_gazebo_world/urdf/fabo.STL
 
 #过滤文件夹
 build/

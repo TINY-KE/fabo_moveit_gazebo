@@ -25,7 +25,7 @@
   <arg name="gazebo_gui" default="true"/>
   <arg name="paused" default="false"/>
   <!-- By default, use the urdf location provided from the package -->
-  <arg name="urdf_path" default="$(find my_gazebo)/urdf/robot_hokuyo_kinectv1neck.urdf.xacro"/>
+  <arg name="urdf_path" default="$(find ASLAM_gazebo_world)/urdf/robot_hokuyo_kinectv1neck.urdf.xacro"/>
 
   <!-- launch the gazebo simulator and spawn the robot -->
   <include file="$(find robot_hokuyo_kinectv1neck)/launch/gazebo.launch" >

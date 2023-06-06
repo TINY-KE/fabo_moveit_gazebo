@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(fabo_robot_gazebo)
+project(fabo_gazebo_navigation)
 set(CMAKE_BUILD_TYPE "Debug")
 
 ## Compile as C++11, supported in ROS Kinetic and newer
@@ -17,7 +17,7 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   tf
 )
-
+find_package(Boost REQUIRED COMPONENTS filesystem thread date_time iostreams serialization chrono system)
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 

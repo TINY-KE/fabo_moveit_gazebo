@@ -9,7 +9,7 @@
     <!-- <include file="$(find cartographer_ros)/launch/hokuyo_localiaztion.launch" /> -->
     
     <!-- 运行move_base节点 -->
-    <include file="$(find fabo_robot_gazebo)/launch/move_base.launch" />
+    <include file="$(find fabo_gazebo_navigation)/launch/move_base.launch" />
     
     
     <!-- 运行rviz -->
