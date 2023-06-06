@@ -3,7 +3,7 @@
 
 
     <!-- 运行地图服务器，并且加载设置的地图-->
-    <node name="map_server" pkg="map_server" type="map_server" args="/home/zhjd/workspace/ws_huchunxu/src/ros_exploring/my_mobilearm/my_gazebo/map/4.yaml"/>
+    <node name="map_server" pkg="map_server" type="map_server" args="/home/zhjd/workspace/ws_huchunxu/src/ros_exploring/my_mobilearm/my_gazebo/map/map.yaml"/>
 
     <!-- 运行move_base节点 -->
     <include file="$(find fabo_robot_gazebo)/launch/fake_move_base.launch"/>
